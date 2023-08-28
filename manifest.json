@@ -1,0 +1,13 @@
+{
+    "name": "Easy Timer Extension",
+    "description": "This is a timer that helps you keep track of the time you destinate to work",
+    "version": "1.0",
+    "manifest_version": 3,
+    "action":{
+        "default_popup": "scripts/popup.html"
+    }
+
+
+
+
+}
