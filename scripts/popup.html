@@ -6,11 +6,50 @@
     <link rel="stylesheet" href="styles.css">
     <script src="index.js"></script>
     <title>Easy Timer Extension</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
 </head>
 <body>
-    <h1>Hola mundo</h1>
-    <button class="begin">Begin</button>
-    <button class="pause">Pause</button>
-    <button class="reset">Reset</button>
+    <div class="container">
+        <div class="title">
+            <h1>Easy Timer Tracker</h1>
+        </div>
+
+        <div class="settimertitle">
+            <h2>Timer</h2>
+        </div>
+
+        <div class="timer">
+            <span id="counter">00:00:00</span>
+        </div>
+        <br>
+
+        <div class="starter">
+            <button class="begin">
+                <i class="fa fa-play"></i>
+            </button>
+
+            <button class="pause">
+                <i class="fas fa-pause"></i>
+            </button>
+
+            <button class="reset">
+                <i class="fa fa-trash"></i>
+            </button>
+
+            <button class="save">
+                <i class="fa fa-floppy-disk"></i>
+            </button>
+        </div>
+
+        <div class="timertitlehistory">
+            <h2>Timer History</h2>
+        </div>
+
+        <div class="history-timer">
+
+        </div>
+
+    </div>
 </body>
 </html>
