@@ -7,6 +7,7 @@ body {
     width: 300px;
     margin: 0;
     overflow: hidden; /* Evita desbordamiento de contenido */
+    background-color: #00A82D; /* AliceBlue */
   }
   
   /* Estilo para el contenedor principal */
@@ -41,8 +42,8 @@ body {
   }
   
   .starter button {
-    background-color: #007BFF;
-    color: white;
+    background-color: #CADA2A;
+    color: black;
     border: none;
     padding: 10px 20px;
     cursor: pointer;
@@ -65,6 +66,7 @@ body {
     height: 150px;
     overflow-y: auto;
     margin-top: 10px;
+    border: none;
   }
   
   /* Estilo para los elementos vacíos */
@@ -74,4 +76,25 @@ body {
     display: block;
     margin-top: 5px;
   }
+
+  /* Estilo para los elementos en el historial */
+.history-timer div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px; /* Ajusta este valor según lo que desees */
+}
+
+/* Estilo para el botón de eliminación */
+.history-timer button {
+  background-color: red; /* Puedes personalizar el color según tus preferencias */
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+/* Añade un margen entre los elementos en el historial */
+.history-timer div + div {
+  margin-top: 5px; /* Ajusta este valor según lo que desees */
+}
   

@@ -47,7 +47,40 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     function guardarTiempoActual(){
-        
+         // Compruebo si está ejecutándose, lo paro
+    if (isRunning) {
+        pausarContador();
+    }
+
+    // Se obtiene el tiempo actual
+    const tiempoActual = counterElem.textContent;
+
+    // Se crea un elemento de lista (li)
+    const listItem = document.createElement('li');
+
+    // Se crea el tiempo actual
+    const tiempoSaveElem = document.createElement('span');
+    tiempoSaveElem.textContent = tiempoActual;
+
+    // Se crea un botón de eliminación
+    const botonEliminar = document.createElement('button');
+    botonEliminar.innerHTML = '<i class="fas fa-trash"></i>';
+    botonEliminar.style.backgroundColor = '#CADA2A';
+    botonEliminar.style.color = 'black';
+    botonEliminar.addEventListener('click', function () {
+        // Elimina el elemento del historial cuando se hace clic en el botón de eliminar
+        listItem.remove();
+    });
+
+    // Se adjuntan los elementos al elemento de lista (li)
+    listItem.appendChild(tiempoSaveElem);
+    listItem.appendChild(botonEliminar);
+
+    // Se obtiene el elemento de la lista del historial
+    const historialLista = document.querySelector('.history-list');
+
+    // Se agrega el elemento de lista al historial
+    historialLista.appendChild(listItem);
     }
 
     // Agregar eventos a los botones de inicio, pausa y reinicio.
